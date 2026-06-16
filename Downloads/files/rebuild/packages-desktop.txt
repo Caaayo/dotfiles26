@@ -1,0 +1,22 @@
+# =============================================================================
+# packages-desktop.txt — Extra packages for the gaming desktop (CachyOS)
+# =============================================================================
+
+# ── Gaming ────────────────────────────────────────────────────────────────────
+steam
+gamemode
+mangohud             # performance overlay
+protonup-qt          # manage Proton versions
+lutris
+wine
+
+# ── GPU (uncomment the one that applies) ─────────────────────────────────────
+# nvidia-dkms        # NVIDIA proprietary (CachyOS usually handles this)
+mesa               # AMD / Intel open source
+
+# ── Performance (CachyOS often pre-installs these, but just in case) ──────────
+cachyos-settings     # CachyOS tweaks (skip if not available on plain Arch)
+
+# ── Extras ────────────────────────────────────────────────────────────────────
+discord
+obs-studio

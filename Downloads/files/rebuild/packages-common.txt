@@ -1,0 +1,98 @@
+# =============================================================================
+# packages-common.txt — Installed on ALL machines
+# Lines starting with # are comments. Inline comments work too.
+# These are yay/pacman package names.
+# =============================================================================
+
+# ── Core system tools ─────────────────────────────────────────────────────────
+base-devel
+git
+curl
+wget
+stow
+unzip
+zip
+htop
+btop
+ripgrep
+fd
+fzf
+bat
+#eza                  # modern ls replacement
+#zoxide               # smarter cd
+#tmux
+neovim
+#man-db
+code
+iwd
+
+# ── qt-wayland  ─────────────────────────────────────────────────────────────────────
+qt5-wayland
+qt6-wayland
+
+# ── Shell ─────────────────────────────────────────────────────────────────────
+bash
+fish
+bash-completion
+
+# ── Networking ────────────────────────────────────────────────────────────────
+openssh
+networkmanager
+
+# ── Hyprland & Wayland core ───────────────────────────────────────────────────
+hyprland
+hyprpaper            # wallpaper
+hyprlock             # screen lock
+hypridle             # idle daemon
+hyprpolkitagent
+xdg-desktop-portal-hyprland
+xdg-desktop-portal-gtk
+waybar
+#rofi-wayland         # app launcher
+rofi
+dunst                # notifications
+wl-clipboard
+grim                 # screenshots
+slurp                # region select for screenshots
+swappy               # screenshot annotation
+
+# ── Fonts ─────────────────────────────────────────────────────────────────────
+ttf-jetbrains-mono
+ttf-jetbrains-mono-nerd
+ttf-font-awesome
+ttf-nerd-fonts-symbols
+noto-fonts
+noto-fonts-emoji
+noto-fonts-cjk
+
+# ── Terminal ──────────────────────────────────────────────────────────────────
+kitty                # swap for your preferred terminal
+
+# ── File management ───────────────────────────────────────────────────────────
+nemo               # GUI file manager
+#thunar               # GUI file manager
+#gvfs
+
+# ── Audio ─────────────────────────────────────────────────────────────────────
+pipewire
+pipewire-audio
+pipewire-alsa
+pipewire-pulse
+pipewire-jack
+wireplumber
+pavucontrol          # audio control GUI
+playerctl
+
+# ── Dev tools ─────────────────────────────────────────────────────────────────
+python
+python-pip
+nodejs
+npm
+jq                   # JSON processor
+github-cli
+
+# ── Uncategorized  ─────────────────────────────────────────────────────────────────
+mpv
+nwg-look
+gnome-themes-extra
+qt6ct

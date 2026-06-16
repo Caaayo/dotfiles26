@@ -1,0 +1,15 @@
+# =============================================================================
+# packages-laptop.txt — Extra packages for the laptop (bare Arch + Hyprland)
+# =============================================================================
+
+# ── Power management ──────────────────────────────────────────────────────────
+tlp                  # battery optimization
+tlp-rdw
+powertop
+
+# ── Laptop hardware ───────────────────────────────────────────────────────────
+brightnessctl        # screen brightness control
+acpi                 # battery info
+
+# ── Networking (laptop-specific) ──────────────────────────────────────────────
+iwd                  # wifi daemon (pairs well with NetworkManager)
