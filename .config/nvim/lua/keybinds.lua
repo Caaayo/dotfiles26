@@ -26,6 +26,9 @@ vim.keymap.set("n", "<leader>X", "<cmd>!chmod +x %<CR>", { silent = true, desc =
 
 vim.keymap.set("n", "<leader>re", "<cmd>restart<cr>", { desc = "Restart config :restart)" })
 
+vim.keymap.set("n", "<Leader>h", "<C-w>h")
+vim.keymap.set("n", "<Leader>l", "<C-w>l")
+vim.keymap.set("n", "<Leader>e", ":Ex<cr>")
 vim.keymap.set("n", "<Leader>fs", ":w<cr>")
 vim.keymap.set("n", "<Leader>so", ":source<cr>:echo 'Sourced.'<cr>")
 vim.keymap.set("n", "<Leader>fq", ":wq<cr>")
