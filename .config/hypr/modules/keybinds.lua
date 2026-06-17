@@ -20,7 +20,7 @@ local thirdMod = "SUPER + CTRL"  -- Sets "Windows + CTRL" key as main modifier
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(launcher))
-hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("/home/sudit/.config/waybar/scripts/launch.sh"))
+hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("$HOME/.config/waybar/scripts/launch.sh"))
 hl.bind(secondMod .. " + SPACE", hl.dsp.exec_cmd(runner))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 
