@@ -78,6 +78,8 @@ ghostty
 nemo                # GUI file manager
 #thunar             # GUI file manager
 #gvfs
+yazi
+ranger
 
 # ── Audio ─────────────────────────────────────────────────────────────────────
 pipewire
