@@ -4,7 +4,9 @@
 
 -- Set programs that you use
 local terminal    = "kitty"
-local fileManager = "nemo"
+local taskmanager = "kitty -e btop"
+local fileManager = "kitty -e yazi"
+local fileManager2 = "nemo"
 local browser = "firefox"
 local launcher = "rofi -show drun -show-icons"
 local runner = "rofi -show run"
@@ -19,10 +21,12 @@ local thirdMod = "SUPER + CTRL"  -- Sets "Windows + CTRL" key as main modifier
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(secondMod .. " + E", hl.dsp.exec_cmd(fileManager2))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(launcher))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("/home/sudit/.config/waybar/scripts/launch.sh"))
 hl.bind(secondMod .. " + SPACE", hl.dsp.exec_cmd(runner))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
+hl.bind(secondMod .. " + B", hl.dsp.exec_cmd(taskmanager))
 
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("~/.local/bin/nightlight.sh"), { locked = true, repeating = true })
 
