@@ -11,6 +11,7 @@ local browser = "firefox"
 local launcher = "rofi -show drun -show-icons"
 local runner = "rofi -show run"
 local eHyprKeybinds = "kitty -e nvim ~/.config/hypr/modules/keybinds.lua"
+local poweroptions = "wlogout"
 
 ---------------------
 ---- KEYBINDINGS ----
@@ -35,6 +36,7 @@ hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("~/.local/bin/nightlight.sh"), { lock
 local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 
 hl.bind(secondMod .. " + Q", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
+hl.bind(thirdMod .. " + Q", hl.dsp.exec_cmd(poweroptions))
 
 hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
