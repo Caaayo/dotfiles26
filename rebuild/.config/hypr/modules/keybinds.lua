@@ -20,6 +20,7 @@ local poweroptions = "wlogout"
 local mainMod = "SUPER" -- Sets "Windows" key as main modifier
 local secondMod = "SUPER + SHIFT"  -- Sets "Windows + SHIFT" key as main modifier
 local thirdMod = "SUPER + CTRL"  -- Sets "Windows + CTRL" key as main modifier
+local fourthMod = "SUPER + ALT"  -- Sets "Windows + ALT" key as main modifier
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
@@ -29,7 +30,7 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("/home/sudit/.config/waybar/scripts/l
 hl.bind(secondMod .. " + SPACE", hl.dsp.exec_cmd(runner))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(secondMod .. " + B", hl.dsp.exec_cmd(taskmanager))
-hl.bind(thirdMod .. " + H", hl.dsp.exec_cmd(eHyprKeybinds))
+hl.bind(fourthMod .. " + H", hl.dsp.exec_cmd(eHyprKeybinds))
 
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("~/.local/bin/nightlight.sh"), { locked = true, repeating = true })
 
@@ -110,5 +111,14 @@ hl.bind("XF86MonBrightnessDown",hl.dsp.exec_cmd("brightnessctl -e4 -n2 set 5%-")
 hl.bind("XF86AudioNext",  hl.dsp.exec_cmd("playerctl next"),       { locked = true })
 hl.bind("XF86AudioPause", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
 hl.bind("XF86AudioPlay",  hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
+hl.bind(fourthMod .. " + DOWN", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
+hl.bind(fourthMod .. " + DOWN", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
+hl.bind(fourthMod .. " + LEFT", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
+hl.bind(fourthMod .. " + RIGHT", hl.dsp.exec_cmd("playerctl next"), { locked = true })
+hl.bind(fourthMod .. " + LEFT", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
+hl.bind(fourthMod .. " + RIGHT", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 hl.bind("XF86AudioPrev",  hl.dsp.exec_cmd("playerctl previous"),   { locked = true })
+hl.bind(fourthMod .. " + DOWN", hl.dsp.exec_cmd("playerctl play-pause"), { locked = true })
+hl.bind(fourthMod .. " + LEFT", hl.dsp.exec_cmd("playerctl previous"), { locked = true })
+hl.bind(fourthMod .. " + RIGHT", hl.dsp.exec_cmd("playerctl next"), { locked = true })
 
