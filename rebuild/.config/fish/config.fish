@@ -45,6 +45,9 @@ alias upgrade=update
 # ── venv ───────────────────────────────────────────────────────────────────────────────
 alias venv="source ./.venv/bin/activate.fish"
 
+# ── Neovim ───────────────────────────────────────────────────────────────────────────────
+alias envim="nvim ~/.config/nvim/"   # edit
+
 # ── Fish Config ───────────────────────────────────────────────────────────────────────────────
 # Locally
 alias efish="nvim ~/.config/fish/config.fish"   # edit
@@ -55,6 +58,11 @@ alias vfish="bat ~/.config/fish/config.fish"    # view (read-only)
 alias egfish="nvim /usr/share/cachyos-fish-config/cachyos-config.fish"   # edit
 alias sgfish="source /usr/share/cachyos-fish-config/cachyos-config.fish" # source/reload
 alias vgfish="bat /usr/share/cachyos-fish-config/cachyos-config.fish"    # view (read-only)
+
+# ── DotFiles26 ───────────────────────────────────────────────────────────────────────────────
+# Locally
+alias vdot="yazi ~/Documents/dotfiles26/"   # edit
+alias dot="cd ~/Documents/dotfiles26/ && ls"   # edit
 
 # ── Rules ───────────────────────────────────────────────────────────────────────────────
 function mkrule
@@ -68,6 +76,7 @@ alias rules="sudo udevadm control --reload-rules && sudo udevadm trigger"
 # ── Hypr ───────────────────────────────────────────────────────────────────────────────
 alias ehypr="nvim ~/.config/hypr"   # edit
 alias ehyprm="nvim ~/.config/hypr/modules"   # edit
+alias ehyprk="nvim ~/.config/hypr/modules/keybinds.lua"   # edit
 
 # ── Ferris Sweep ───────────────────────────────────────────────────────────────────────────────
 alias esweep='nvim ~/qmk_firmware/keyboards/ferris/keymaps/suditMiryoku/keymap.c'
@@ -77,4 +86,14 @@ alias sweepfull='sweepcompile && sweepflash'
 
 # ── iRacing Lab ───────────────────────────────────────────────────────────────────────────────
 alias iracing='cd ~/Documents/iracing-lab && venv'
+
+# ── Copy Config Files ───────────────────────────────────────────────────────────────────────────────
+alias copyhypr='cp -r ~/.config/hypr/ ~/Documents/dotfiles26/rebuild/.config/'
+alias copynvim='cp -r ~/.config/nvim/ ~/Documents/dotfiles26/rebuild/.config/'
+alias copyfish='cp -r ~/.config/fish/ ~/Documents/dotfiles26/rebuild/.config/'
+alias copyyazi='cp -r ~/.config/yazi/ ~/Documents/dotfiles26/rebuild/.config/'
+
+# ── Yazi ───────────────────────────────────────────────────────────────────────────────
+alias y.='yazi .'
+alias y='yazi'
 

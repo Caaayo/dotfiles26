@@ -10,6 +10,7 @@ local fileManager2 = "nemo"
 local browser = "firefox"
 local launcher = "rofi -show drun -show-icons"
 local runner = "rofi -show run"
+local eHyprKeybinds = "kitty -e nvim ~/.config/hypr/modules/keybinds.lua"
 
 ---------------------
 ---- KEYBINDINGS ----
@@ -27,6 +28,7 @@ hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("/home/sudit/.config/waybar/scripts/l
 hl.bind(secondMod .. " + SPACE", hl.dsp.exec_cmd(runner))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(secondMod .. " + B", hl.dsp.exec_cmd(taskmanager))
+hl.bind(thirdMod .. " + H", hl.dsp.exec_cmd(eHyprKeybinds))
 
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("~/.local/bin/nightlight.sh"), { locked = true, repeating = true })
 
