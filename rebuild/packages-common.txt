@@ -103,6 +103,13 @@ github-cli
 yt-dlp
 pipe-viewer-git # just downloaded yay
 
+# ── Printing  ─────────────────────────────────────────────────────────────────
+cups
+cups-filters
+avahi
+nss-mdns
+hplip
+
 # ── Uncategorized  ─────────────────────────────────────────────────────────────────
 mpv
 nwg-look
