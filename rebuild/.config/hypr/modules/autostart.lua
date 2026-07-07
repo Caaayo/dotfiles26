@@ -8,6 +8,7 @@
 -- Or execute your favorite apps at launch like this:
 --
 hl.on("hyprland.start", function() 
+  hl.exec_cmd("hyprctl switchxkblayout all 1")
   hl.exec_cmd("waybar")
   hl.exec_cmd("systemctl --user start hyprpolkitagent")
   --hl.exec_cmd("swaync")
