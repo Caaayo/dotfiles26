@@ -12,6 +12,9 @@ local launcher = "rofi -show drun -show-icons"
 local runner = "rofi -show run"
 local eHyprKeybinds = "kitty -e nvim ~/.config/hypr/modules/keybinds.lua"
 local poweroptions = "wlogout"
+local network = "kitty -e nmtui"
+local volumecontrol = "pavucontrol"
+local bluetooth = "blueman-manager"
 
 ---------------------
 ---- KEYBINDINGS ----
@@ -24,13 +27,16 @@ local fourthMod = "SUPER + ALT"  -- Sets "Windows + ALT" key as main modifier
 
 hl.bind(mainMod .. " + RETURN", hl.dsp.exec_cmd(terminal))
 hl.bind(mainMod .. " + E", hl.dsp.exec_cmd(fileManager))
+hl.bind(mainMod .. " + N", hl.dsp.exec_cmd(network))
 hl.bind(secondMod .. " + E", hl.dsp.exec_cmd(fileManager2))
 hl.bind(mainMod .. " + SPACE", hl.dsp.exec_cmd(launcher))
 hl.bind(mainMod .. " + R", hl.dsp.exec_cmd("/home/sudit/.config/waybar/scripts/launch.sh"))
 hl.bind(secondMod .. " + SPACE", hl.dsp.exec_cmd(runner))
 hl.bind(mainMod .. " + B", hl.dsp.exec_cmd(browser))
 hl.bind(secondMod .. " + B", hl.dsp.exec_cmd(taskmanager))
+hl.bind(thirdMod .. " + B", hl.dsp.exec_cmd(bluetooth))
 hl.bind(fourthMod .. " + H", hl.dsp.exec_cmd(eHyprKeybinds))
+hl.bind(mainMod .. " + V", hl.dsp.exec_cmd(volumecontrol))
 
 hl.bind(mainMod .. " + N", hl.dsp.exec_cmd("~/.local/bin/nightlight.sh"), { locked = true, repeating = true })
 
@@ -39,7 +45,7 @@ local closeWindowBind = hl.bind(mainMod .. " + Q", hl.dsp.window.close())
 hl.bind(secondMod .. " + Q", hl.dsp.exec_cmd("command -v hyprshutdown >/dev/null 2>&1 && hyprshutdown || hyprctl dispatch 'hl.dsp.exit()'"))
 hl.bind(thirdMod .. " + Q", hl.dsp.exec_cmd(poweroptions))
 
-hl.bind(mainMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
+hl.bind(secondMod .. " + V", hl.dsp.window.float({ action = "toggle" }))
 hl.bind(mainMod .. " + P", hl.dsp.window.pseudo())
 --hl.bind(mainMod .. " + S", hl.dsp.layout("togglesplit"))    -- dwindle only
 
@@ -77,6 +83,7 @@ hl.bind(thirdMod .. " + J", hl.dsp.window.resize({ x = 0, y = resizeUnit, relati
 
 hl.bind(secondMod .. " + T",  hl.dsp.window.float({ action = "toggle" }))
 hl.bind(secondMod .. " + F",  hl.dsp.window.fullscreen({ mode = "maximized" }))
+hl.bind(thirdMod .. " + F",  hl.dsp.window.fullscreen({ mode = "fullscreen" }))
 
 -- Switch workspaces with mainMod + [0-9]
 -- Move active window to a workspace with mainMod + SHIFT + [0-9]

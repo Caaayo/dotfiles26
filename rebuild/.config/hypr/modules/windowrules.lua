@@ -30,6 +30,17 @@ hl.window_rule({
     no_focus = true,
 })
 
+hl.window_rule({ 
+    match = { class = "mpv"},
+    opacity = "1.0 override 1.0 override"
+})
+
+hl.window_rule({ 
+    workspace = "8", 
+    match = { class = "(?i)discord"},
+    opacity = "1.0 override 1.0 override"
+})
+
 hl.window_rule({ workspace = "1", match = { class = "(?i)firefox"}})
 hl.window_rule({ workspace = "8", match = { class = "(?i)discord"}})
 hl.window_rule({ workspace = "9", match = { class = "(?i)steam"}})
