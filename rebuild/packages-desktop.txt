@@ -23,3 +23,5 @@ cachyos-settings     # CachyOS tweaks (skip if not available on plain Arch)
 # ── Extras ────────────────────────────────────────────────────────────────────
 discord
 obs-studio
+docker
+winboat

@@ -1,0 +1,3 @@
+# Disable PlayStation touchpad acting as mouse
+ATTRS{name}=="*Controller Touchpad", ENV{LIBINPUT_IGNORE_DEVICE}="1"
+
