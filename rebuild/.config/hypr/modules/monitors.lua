@@ -14,7 +14,7 @@ hl.monitor({
     output   = "eDP-1",
     mode     = "preferred",
     position = "auto",
-    scale    = "1.33",
+    scale    = "1.0",
 })
 
 hl.workspace_rule({workspace = "1", persistent = true})
