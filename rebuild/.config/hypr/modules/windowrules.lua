@@ -40,11 +40,14 @@ hl.window_rule({
     match = { class = "(?i)discord"},
     opacity = "1.0 override 1.0 override"
 })
-
 hl.window_rule({ workspace = "1", match = { class = "(?i)firefox"}})
 hl.window_rule({ workspace = "8", match = { class = "(?i)discord"}})
 hl.window_rule({ workspace = "9", match = { class = "(?i)steam"}})
 hl.window_rule({ workspace = "9", match = { class = "(?i)azeron.*"}})
-hl.window_rule({ workspace = "10", match = { class = "(?i)steam_app_.*"}})
+hl.window_rule({ 
+    workspace = "10", 
+    match = { class = "(?i)steam_app_.*"},
+    opacity = "1.0 override 1.0 override"
+})
 hl.window_rule({ workspace = "10", match = { class = "(?i).*xiv.*" } })
 
